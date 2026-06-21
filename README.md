@@ -102,9 +102,9 @@ H6WNIVJ4
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video Link (Mandatory):** `[Add demo video link]`
-- **Deployment Link (Recommended):** [studymatev3web.vercel.app](add url here)
-- **Pitch Deck / PPT (Optional):** `[Add link if available]`
+- **Demo Video Link:** `[Add demo video link]`
+- **Deployment Link:** [studymatev3web.vercel.app](add url here)
+- **PPT Link:** [StudyMate Presenation](https://gamma.app/docs/The-AI-study-partner-that-sees-your-focus-hears-your-doubts-and-k-t8akqjfu4p1q9ao)
 
 ---
 
