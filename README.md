@@ -45,11 +45,13 @@ StudyMate AI shifts the paradigm from content delivery to a **behavioral and cog
 ## 🧠 Team & Approach
 
 ### Team Name:
-`[Add your team name]`
+MPBian
+
+### Team Code:
+H6WNIVJ4
 
 ### Team Members:
-- Abhinav Gupta — [GitHub: EgoisticCoder](https://github.com/EgoisticCoder) / [LinkedIn](https://linkedin.com/in/egoistic-coderx) / Full-Stack & AI/ML Lead
-- `[Add additional teammates here, if any]`
+- Abhinav Gupta — Full-Stack & AI/ML Lead
 
 ### Your Approach:
 - Chose this problem from direct exposure to the ICSE high-pressure curriculum and the gap between what students report ("I'm stressed") and what's actually happening (avoidance).
@@ -65,7 +67,7 @@ StudyMate AI shifts the paradigm from content delivery to a **behavioral and cog
 - **Frontend:** Expo / React Native (mobile app), Next.js (landing website)
 - **Backend:** Vercel Serverless Functions / Next.js API routes (proxy layer for all AI service calls)
 - **Database:** Neo4j AuraDB (graph database — primary store for behavioral/cognitive state), SQLite (on-device local indexing for notes RAG)
-- **APIs:** Groq Llama-3 (LLM reasoning + vision-based focus detection), Sarvam AI (Bulbul TTS, Saaras STT)
+- **APIs:** Sarvam AI (Saaras V3, Bulbul V3, Sarvam 105B, Sarvam Vision, Sarvam Mayura)
 - **Hosting:** Vercel (web + serverless proxies), EAS Build (Android APK)
 
 ### Additional Technologies Used:
@@ -80,7 +82,6 @@ StudyMate AI shifts the paradigm from content delivery to a **behavioral and cog
 
 - [x] **Expo Track** – The entire mobile application is built natively in Expo/React Native, including camera-based vision telemetry (`expo-camera`), SVG mind maps (`react-native-svg`), audio I/O for voice mode, and haptic feedback — not a thin wrapper.
 - [x] **Neo4j Track** – AuraDB is the primary database, not a secondary cache. Student activity is modeled as a graph (`ATTEMPTED`, `LOGGED_MOOD`, `STUDIED`, `HAS_RELATIONSHIP`, etc.), enabling multi-hop Cypher queries that correlate quiz performance drops with mood logs and study-session patterns — the core mechanism behind avoidance detection.
-- [ ] **Base44 Track**
 
 > **Neo4j implementation note:** Before every LLM interaction, an 8-thread parallel Cypher query loop (`buildStudentContext`) pulls recency-weighted subject mastery, behavioral state classification, cognitive edge flags (e.g. `LOVES_BUT_STRUGGLES`), parental observations, and a calculated stress verdict — compiled into a single context-injected prompt.
 
@@ -97,14 +98,12 @@ StudyMate AI shifts the paradigm from content delivery to a **behavioral and cog
 - ✅ **Parent Portal** — Read-only access to weaknesses, diagnostics, and stress analytics, with a private channel to feed observations back into the AI context.
 - ✅ **Gamification Layer** — XP, streaks, daily missions, and an XP shop for themes/avatars to sustain engagement beyond the study session itself.
 
-*(Add screenshots/GIFs of the dashboard, focus vision overlay, and voice mode here before submission — visuals carry more weight with judges than feature lists.)*
-
 ---
 
 ## 📽️ Demo & Deliverables
 
 - **Demo Video Link (Mandatory):** `[Add demo video link]`
-- **Deployment Link (Recommended):** [studymatev3web.vercel.app](https://studymatev3web.vercel.app)
+- **Deployment Link (Recommended):** [studymatev3web.vercel.app](add url here)
 - **Pitch Deck / PPT (Optional):** `[Add link if available]`
 
 ---
@@ -123,14 +122,13 @@ StudyMate AI shifts the paradigm from content delivery to a **behavioral and cog
 - Node.js (v18+) and npm/yarn
 - Expo CLI (`npm install -g expo-cli`) for the mobile app
 - A Neo4j AuraDB instance (connection URI + credentials)
-- API keys: Groq, Sarvam AI
-- Vercel CLI (optional, for local serverless proxy testing)
+- API keys: Sarvam AI
 
 ### Local Setup:
 ```bash
 # Clone the repository
-git clone https://github.com/EgoisticCoder/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/EgoisticCoder/StudyMate_Hackazards-26.git
+cd StudyMate_Hackazards-26
 
 # --- Mobile app ---
 cd app
@@ -139,20 +137,18 @@ cp .env.example .env   # fill in Neo4j, Groq, and Sarvam credentials
 npx expo start
 
 # --- Landing website ---
-cd ../website
+cd website
 npm install
 cp .env.example .env
 npm run dev
 ```
 
-> ⚠️ **Verify before submission:** the exact `.env` variable names, folder structure (`app/` vs `website/`), and whether a separate proxy server needs to run locally — fill these in against your actual repo structure rather than trusting this as final.
-
 ---
 
 ## 🧬 Future Scope
 
-- 📈 Expand beyond ICSE/CBSE to state boards and competitive exam prep (JEE/NEET foundation tracks)
-- 🌐 Broader Sarvam language coverage for additional regional languages beyond current support
+- 📈 Expand beyond ICSE/CBSE to state boards, competitive exam prep (JEE/NEET foundation tracks etc) and expansion towards International Curriculum
+- 🌐 Broader language coverage for additional regional languages beyond current support
 - 🛡️ On-device local LLM inference for a fully offline study mode
 - 🧑‍🏫 Teacher-facing dashboard alongside the existing parent portal
 - 🔋 Battery/performance optimization for the continuous vision-focus monitoring feature
@@ -162,7 +158,6 @@ npm run dev
 ## 📎 Resources / Credits
 
 - [Neo4j AuraDB](https://neo4j.com/cloud/platform/aura-graph-database/) — graph database engine
-- [Groq](https://groq.com/) — Llama-3 inference (reasoning + vision)
 - [Sarvam AI](https://www.sarvam.ai/) — Saaras (STT) and Bulbul (TTS)
 - [Expo](https://expo.dev/) — React Native framework
 - [Vercel](https://vercel.com/) — hosting and serverless functions
