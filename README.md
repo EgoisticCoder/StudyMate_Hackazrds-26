@@ -102,10 +102,8 @@ H6WNIVJ4
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video Link:** `[Add demo video link]`
-- **Deployment Link:** `[Add Render/Vercel website URL]`
-- **Backend API:** `[Add Render backend URL]`
-- **Android APK:** `[Add EAS Build / APK download link]`
+- **Demo Video Link:** `[https://youtu.be/UJVNXYL6WZU?si=cBqWlP0a1f0WWwc7]`
+- **Backend API:** (https://studymate-backend-idxp.onrender.com)
 - **PPT Link:** [StudyMate Presenation](https://gamma.app/docs/The-AI-study-partner-that-sees-your-focus-hears-your-doubts-and-k-t8akqjfu4p1q9ao)
 
 ---
@@ -113,8 +111,8 @@ H6WNIVJ4
 ## ✅ Tasks & Bonus Checklist
 
 - [ ] All team members completed the mandatory social task
-- [ ] Bonus Task 1 – Badge sharing
-- [ ] Bonus Task 2 – Blog/article
+- [x] Bonus Task 1 – Badge sharing
+- [x] Bonus Task 2 – Blog/article
 
 ---
 
@@ -182,14 +180,8 @@ npm run dev             # Deploys Next.js dev server locally
 - [Sarvam AI](https://www.sarvam.ai/) — Saaras (STT) and Bulbul (TTS)
 - [Expo](https://expo.dev/) — React Native framework
 - [Render](https://render.com/) — backend hosting
-- [Vercel](https://vercel.com/) — website hosting (alt: Render)
 
 ---
-
-## 🏁 Final Words
-
-`[Write this one yourself — judges can tell a templated reflection from a real one. A line on the Sarvam integration blocker you had to solve, or what surprised you about the behavioral engine working in practice, will land better than anything generic I'd draft here.]`
-
 ---
 
 ## License
