@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "NEO4J_URI": "@neo4j_uri",
+    "NEO4J_USERNAME": "@neo4j_username",
+    "NEO4J_PASSWORD": "@neo4j_password",
+    "SARVAM_API_KEY": "@sarvam_api_key",
+    "TAVILY_API_KEY": "@tavily_api_key"
+  }
+}
